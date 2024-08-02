@@ -94,6 +94,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxS-B3-yqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2150" y="692"/>
+
         </scene>
     </scenes>
     <resources>

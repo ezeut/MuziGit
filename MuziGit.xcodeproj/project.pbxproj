@@ -15,6 +15,11 @@
 		507940BE2C5D1C8D00EEB9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */; };
 		507940C12C5D1C8D00EEB9BE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 507940C02C5D1C8D00EEB9BE /* Base */; };
 		507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */; };
+		507940C92C5D1FE400EEB9BE /* GithubLoginInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */; };
+		507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */; };
+		507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */; };
+		507940D02C5D20D800EEB9BE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 507940CF2C5D20D800EEB9BE /* Alamofire */; };
+		507940D22C5D2E4A00EEB9BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507940D12C5D2E4A00EEB9BE /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,10 @@
 		507940C02C5D1C8D00EEB9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507940C22C5D1C8D00EEB9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GithubLoginInfo.plist; sourceTree = "<group>"; };
+		507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuziGit++Bundle.swift"; sourceTree = "<group>"; };
+		507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubLoginManager.swift; sourceTree = "<group>"; };
+		507940D12C5D2E4A00EEB9BE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507940D02C5D20D800EEB9BE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,15 +70,19 @@
 		507940B02C5D1C8C00EEB9BE /* MuziGit */ = {
 			isa = PBXGroup;
 			children = (
+				507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */,
+				507940C22C5D1C8D00EEB9BE /* Info.plist */,
 				507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */,
+				507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */,
 				507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */,
 				507940B52C5D1C8C00EEB9BE /* ViewController.swift */,
-				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
 				507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */,
 				507940BF2C5D1C8D00EEB9BE /* LaunchScreen.storyboard */,
-				507940C22C5D1C8D00EEB9BE /* Info.plist */,
+				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
+				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
 				507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */,
 				507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */,
+				507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */,
 			);
 			path = MuziGit;
 			sourceTree = "<group>";
@@ -89,6 +103,9 @@
 			dependencies = (
 			);
 			name = MuziGit;
+			packageProductDependencies = (
+				507940CF2C5D20D800EEB9BE /* Alamofire */,
+			);
 			productName = MuziGit;
 			productReference = 507940AE2C5D1C8C00EEB9BE /* MuziGit.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 507940A52C5D1C8C00EEB9BE;
+			packageReferences = (
+				507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 507940AF2C5D1C8C00EEB9BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				507940BE2C5D1C8D00EEB9BE /* Assets.xcassets in Resources */,
+				507940D22C5D2E4A00EEB9BE /* Home.storyboard in Resources */,
 				507940C12C5D1C8D00EEB9BE /* Base in Resources */,
 				507940B92C5D1C8C00EEB9BE /* Base in Resources */,
+				507940C92C5D1FE400EEB9BE /* GithubLoginInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +170,8 @@
 				507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */,
 				507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */,
 				507940B22C5D1C8C00EEB9BE /* AppDelegate.swift in Sources */,
+				507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */,
+				507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */,
 				507940B42C5D1C8C00EEB9BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +341,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,6 +373,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -377,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		507940CF2C5D20D800EEB9BE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */ = {

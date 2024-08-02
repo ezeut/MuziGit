@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      
         onboardingPageControl.preferredIndicatorImage = UIImage(named: "defaultPageIndicator")
         onboardingPageControl.setIndicatorImage(UIImage(named: "currentPageIndicator"), forPage: 0)
         //            onboardingPageControl.pageIndicatorTintColor = UIColor(named: "Gray")
@@ -56,6 +56,7 @@ extension ViewController: OnboardingPageControlDelegate {
         updatePageControl(currentPageIndex: index)
         onboardingPageControl.currentPage = index
     }
+
 }
 
 protocol OnboardingPageControlDelegate: AnyObject {

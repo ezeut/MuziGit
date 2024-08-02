@@ -11,9 +11,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func touchUpGithubLogin(_ sender: UIButton) {
+        GithubLoginManager.shared.requestCode()
+    }
+    
+    @IBAction func touchUpCheck(_ sender: UIButton) {
+        let acToken = UserDefaults.standard.string(forKey: "accessToken") as Any
+        print(acToken)
+    }
 }
 

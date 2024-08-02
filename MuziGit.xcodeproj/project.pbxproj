@@ -14,6 +14,7 @@
 		507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */; };
 		507940BE2C5D1C8D00EEB9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */; };
 		507940C12C5D1C8D00EEB9BE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 507940C02C5D1C8D00EEB9BE /* Base */; };
+		507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */; };
 		507940C92C5D1FE400EEB9BE /* GithubLoginInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */; };
 		507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */; };
 		507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */; };
@@ -31,6 +32,7 @@
 		507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507940C02C5D1C8D00EEB9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507940C22C5D1C8D00EEB9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GithubLoginInfo.plist; sourceTree = "<group>"; };
 		507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuziGit++Bundle.swift"; sourceTree = "<group>"; };
 		507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubLoginManager.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
 				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
 				507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */,
+				507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */,
 				507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */,
 			);
 			path = MuziGit;
@@ -165,6 +168,7 @@
 			files = (
 				507940B62C5D1C8C00EEB9BE /* ViewController.swift in Sources */,
 				507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */,
+				507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */,
 				507940B22C5D1C8C00EEB9BE /* AppDelegate.swift in Sources */,
 				507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */,
 				507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */,

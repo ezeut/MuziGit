@@ -20,6 +20,8 @@
 		507940D02C5D20D800EEB9BE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 507940CF2C5D20D800EEB9BE /* Alamofire */; };
 		507940D22C5D2E4A00EEB9BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507940D12C5D2E4A00EEB9BE /* Home.storyboard */; };
 		507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */; };
+		507940D72C5DFB1900EEB9BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */; };
+		507940D92C5DFB2500EEB9BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D82C5DFB2500EEB9BE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubLoginManager.swift; sourceTree = "<group>"; };
 		507940D12C5D2E4A00EEB9BE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		507940D82C5DFB2500EEB9BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +76,19 @@
 			children = (
 				507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */,
 				507940C22C5D1C8D00EEB9BE /* Info.plist */,
+				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
 				507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */,
-				507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */,
 				507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */,
+				507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */,
+				507940D82C5DFB2500EEB9BE /* HomeViewController.swift */,
+				507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */,
+				507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */,
 				507940B52C5D1C8C00EEB9BE /* ViewController.swift */,
+				507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */,
 				507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */,
 				507940BF2C5D1C8D00EEB9BE /* LaunchScreen.storyboard */,
 				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
-				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
 				507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */,
-				507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */,
-				507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */,
 			);
 			path = MuziGit;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 				507940B62C5D1C8C00EEB9BE /* ViewController.swift in Sources */,
 				507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */,
 				507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */,
+				507940D72C5DFB1900EEB9BE /* OnboardingViewController.swift in Sources */,
 				507940B22C5D1C8C00EEB9BE /* AppDelegate.swift in Sources */,
+				507940D92C5DFB2500EEB9BE /* HomeViewController.swift in Sources */,
 				507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */,
 				507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */,
 				507940B42C5D1C8C00EEB9BE /* SceneDelegate.swift in Sources */,

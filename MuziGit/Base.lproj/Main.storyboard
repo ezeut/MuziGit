@@ -16,26 +16,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-7d-JnP">
-                                <rect key="frame" x="0.0" y="59" width="393" height="644"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="6nP-AB-hin" kind="embed" id="oWg-p2-M7c"/>
-                                </connections>
-                            </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="lf7-sx-sIW">
                                 <rect key="frame" x="138" y="677" width="116" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="changePageValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="mYY-us-lRE"/>
+                                    <action selector="changePageValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="bLo-01-PP2"/>
                                 </connections>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qs5-H4-6Wi">
+                                <rect key="frame" x="127" y="733" width="139" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Github로 로그인"/>
+                                <connections>
+                                    <action selector="touchUpGithubLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bl-GM-SPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kle-tN-M7e">
+                                <rect key="frame" x="16" y="742" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Bq-S4-gLt"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-7d-JnP">
+                                <rect key="frame" x="0.0" y="59" width="393" height="644"/>
+                                <connections>
+                                    <segue destination="6nP-AB-hin" kind="embed" id="oWg-p2-M7c"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qs5-H4-6Wi" firstAttribute="top" secondItem="nPi-7d-JnP" secondAttribute="bottom" constant="30" id="0pB-iI-5F1"/>
+                            <constraint firstItem="nPi-7d-JnP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Ju-wl-8t5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nPi-7d-JnP" secondAttribute="bottom" constant="115" id="9x2-Kp-UpD"/>
+                            <constraint firstItem="Qs5-H4-6Wi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mot-ei-6Y7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPi-7d-JnP" secondAttribute="trailing" id="SBM-Ra-c8Y"/>
+                            <constraint firstItem="nPi-7d-JnP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qs7-jy-axe"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="onboardingPageControl" destination="lf7-sx-sIW" id="7F3-bW-pkz"/>
+                        <outlet property="onboardingPageControl" destination="lf7-sx-sIW" id="gbl-J7-B8p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +118,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxS-B3-yqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2150" y="692"/>
-
         </scene>
     </scenes>
     <resources>

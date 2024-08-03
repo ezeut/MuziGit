@@ -34,6 +34,14 @@ class ViewController: UIViewController {
         updatePageControl(currentPageIndex: currentPageIndex)
     }
 
+    @IBAction func touchUpGithubLogin(_ sender: UIButton) {
+        GithubLoginManager.shared.requestCode()
+    }
+    @IBAction func check(_ sender: UIButton) {
+        print(UserDefaults.standard.string(forKey: "accessToken") as Any)
+        print(UserDefaults.standard.string(forKey: "refreshToken") as Any)
+    }
+    
     func updatePageControl(currentPageIndex: Int) {
         //            onboardingPageControl.pageIndicatorTintColor = UIColor(named: "Gray")
         //            onboardingPageControl.currentPageIndicatorTintColor = UIColor(named: "Neo")

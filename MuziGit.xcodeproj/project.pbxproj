@@ -22,6 +22,8 @@
 		507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */; };
 		507940D72C5DFB1900EEB9BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */; };
 		507940D92C5DFB2500EEB9BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D82C5DFB2500EEB9BE /* HomeViewController.swift */; };
+		507940DE2C629E4600EEB9BE /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940DD2C629E4600EEB9BE /* Contribution.swift */; };
+		507940E12C629E5C00EEB9BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940E02C629E5C00EEB9BE /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		507940D82C5DFB2500EEB9BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		507940DD2C629E4600EEB9BE /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
+		507940E02C629E5C00EEB9BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,23 +78,49 @@
 		507940B02C5D1C8C00EEB9BE /* MuziGit */ = {
 			isa = PBXGroup;
 			children = (
+				507940DC2C629E2B00EEB9BE /* Storyboard */,
+				507940DB2C629E2300EEB9BE /* Constants */,
+				507940DA2C629E0300EEB9BE /* Controller */,
 				507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */,
 				507940C22C5D1C8D00EEB9BE /* Info.plist */,
-				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
 				507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */,
 				507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */,
 				507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */,
+				507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */,
+				507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */,
+				507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */,
+			);
+			path = MuziGit;
+			sourceTree = "<group>";
+		};
+		507940DA2C629E0300EEB9BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				507940D82C5DFB2500EEB9BE /* HomeViewController.swift */,
 				507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */,
 				507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */,
 				507940B52C5D1C8C00EEB9BE /* ViewController.swift */,
-				507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */,
-				507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		507940DB2C629E2300EEB9BE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				507940DD2C629E4600EEB9BE /* Contribution.swift */,
+				507940E02C629E5C00EEB9BE /* User.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		507940DC2C629E2B00EEB9BE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				507940BF2C5D1C8D00EEB9BE /* LaunchScreen.storyboard */,
 				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
-				507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */,
+				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
 			);
-			path = MuziGit;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +211,8 @@
 				507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */,
 				507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */,
 				507940B42C5D1C8C00EEB9BE /* SceneDelegate.swift in Sources */,
+				507940DE2C629E4600EEB9BE /* Contribution.swift in Sources */,
+				507940E12C629E5C00EEB9BE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

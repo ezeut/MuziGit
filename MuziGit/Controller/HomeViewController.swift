@@ -12,9 +12,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var userIDLabel: UILabel!
     @IBAction func getUserData(_ sender: UIButton) {
         let accessToken = UserDefaults.standard.string(forKey: "accessToken") ?? ""
-        print(accessToken)
+        let user = UserDefaults.standard.string(forKey: "userID") ?? "유저정보없음"
         GithubLoginManager.shared.getUserData(with: accessToken)
-        userIDLabel.text = UserDefaults.standard.string(forKey: "email")
+        userIDLabel.text = "\(user)님, 안녕하세요"
     }
     
     @IBAction func touchUpLogout(_ sender: UIButton) {
@@ -32,6 +32,11 @@ class HomeViewController: UIViewController {
             self.present(vc, animated: true, completion: nil)
         }))
         present(alert, animated: true)
+    }
+    
+    @IBAction func touchUpContribution(_ sender: UIButton) {
+        let user = UserDefaults.standard.string(forKey: "userID")!
+        GithubLoginManager.shared.getContributions(of: user)
     }
         
     override func viewWillAppear(_ animated: Bool) {

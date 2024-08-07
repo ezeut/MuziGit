@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50451BC92C63835B002AA6CA /* GithubConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50451BC82C63835B002AA6CA /* GithubConstants.swift */; };
 		507940B22C5D1C8C00EEB9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */; };
 		507940B42C5D1C8C00EEB9BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */; };
 		507940B62C5D1C8C00EEB9BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940B52C5D1C8C00EEB9BE /* ViewController.swift */; };
@@ -17,16 +18,18 @@
 		507940C92C5D1FE400EEB9BE /* GithubLoginInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */; };
 		507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */; };
 		507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */; };
-		507940D02C5D20D800EEB9BE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 507940CF2C5D20D800EEB9BE /* Alamofire */; };
 		507940D22C5D2E4A00EEB9BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507940D12C5D2E4A00EEB9BE /* Home.storyboard */; };
 		507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */; };
 		507940D72C5DFB1900EEB9BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */; };
 		507940D92C5DFB2500EEB9BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D82C5DFB2500EEB9BE /* HomeViewController.swift */; };
 		507940DE2C629E4600EEB9BE /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940DD2C629E4600EEB9BE /* Contribution.swift */; };
 		507940E12C629E5C00EEB9BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940E02C629E5C00EEB9BE /* User.swift */; };
+		50B466882C633B7300BD58EC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 50B466872C633B7300BD58EC /* SwiftSoup */; };
+		50B4668B2C633C6E00BD58EC /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 50B4668A2C633C6E00BD58EC /* SwiftDate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50451BC82C63835B002AA6CA /* GithubConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubConstants.swift; sourceTree = "<group>"; };
 		507940AE2C5D1C8C00EEB9BE /* MuziGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuziGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507940D02C5D20D800EEB9BE /* Alamofire in Frameworks */,
+				50B4668B2C633C6E00BD58EC /* SwiftDate in Frameworks */,
+				50B466882C633B7300BD58EC /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +113,7 @@
 			children = (
 				507940DD2C629E4600EEB9BE /* Contribution.swift */,
 				507940E02C629E5C00EEB9BE /* User.swift */,
+				50451BC82C63835B002AA6CA /* GithubConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -140,7 +145,8 @@
 			);
 			name = MuziGit;
 			packageProductDependencies = (
-				507940CF2C5D20D800EEB9BE /* Alamofire */,
+				50B466872C633B7300BD58EC /* SwiftSoup */,
+				50B4668A2C633C6E00BD58EC /* SwiftDate */,
 			);
 			productName = MuziGit;
 			productReference = 507940AE2C5D1C8C00EEB9BE /* MuziGit.app */;
@@ -172,6 +178,8 @@
 			mainGroup = 507940A52C5D1C8C00EEB9BE;
 			packageReferences = (
 				507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				50B466862C633B7300BD58EC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				50B466892C633C6E00BD58EC /* XCRemoteSwiftPackageReference "SwiftDate" */,
 			);
 			productRefGroup = 507940AF2C5D1C8C00EEB9BE /* Products */;
 			projectDirPath = "";
@@ -202,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50451BC92C63835B002AA6CA /* GithubConstants.swift in Sources */,
 				507940B62C5D1C8C00EEB9BE /* ViewController.swift in Sources */,
 				507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */,
 				507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */,
@@ -453,13 +462,34 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		50B466862C633B7300BD58EC /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.3;
+			};
+		};
+		50B466892C633C6E00BD58EC /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		507940CF2C5D20D800EEB9BE /* Alamofire */ = {
+		50B466872C633B7300BD58EC /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 50B466862C633B7300BD58EC /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		50B4668A2C633C6E00BD58EC /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50B466892C633C6E00BD58EC /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
 		};
 /* End XCSwiftPackageProductDependency section */
 

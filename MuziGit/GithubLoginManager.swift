@@ -33,7 +33,7 @@ class GithubLoginManager {
         } catch let error {
             print(error.localizedDescription)
         }
-
+        
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -43,7 +43,7 @@ class GithubLoginManager {
                 guard let data = data else { return }
                 print(data)
                 guard let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
-                    print(String(data: data, encoding: .utf8) ?? "Not String!")
+                    print(String(data: data, encoding: .utf8) ?? "Not String")
                     return
                 }
                 UserDefaults.standard.set(json["access_token"], forKey: "accessToken")
@@ -133,9 +133,6 @@ class GithubLoginManager {
                     
                     print(i,": ", dataDate, dataLevel, countText)
                 }
-//                for j in td {
-
-//                }
             } catch {
                 print(String(describing: error))
             }

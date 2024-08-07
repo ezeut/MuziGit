@@ -35,7 +35,11 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func touchUpGithubLogin(_ sender: UIButton) {
-        GithubLoginManager.shared.requestCode()
+        do {
+            GithubLoginManager.shared.requestCode()
+//            let nextVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "Home")
+//            self.present(nextVC, animated: false)
+        }
     }
     
     @IBAction func check(_ sender: UIButton) {

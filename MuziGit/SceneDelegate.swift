@@ -26,8 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                if url.absoluteString.starts(with: "muzigit-ios://") {
                    if let code = url.absoluteString.split(separator: "=").last.map({ String($0) }) {
                        GithubLoginManager.shared.requestAccessToken(with: code)
-                       GithubLoginManager.shared.requestRefreshToken(with: code)
-                       
+                       setRootViewController(scene, name: "Home", identifier: "Home")
                    }
                }
            }

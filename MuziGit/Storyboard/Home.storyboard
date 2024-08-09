@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YMo-WM-wdT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Oa8-qn-a6j">
+            <objects>
+                <tabBarController storyboardIdentifier="Home" id="YMo-WM-wdT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Jc-2z-PWc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4c6-Yz-X4S" kind="relationship" relationship="viewControllers" id="K5I-Dr-RUQ"/>
+                        <segue destination="ORQ-jo-m4z" kind="relationship" relationship="viewControllers" id="Ilq-vy-lWM"/>
+                        <segue destination="dcI-FQ-uI8" kind="relationship" relationship="viewControllers" id="DB5-O9-ll4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BeS-x0-ZZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="691" y="634"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="3Ug-vw-Dte">
+            <objects>
+                <navigationController id="4c6-Yz-X4S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" id="xob-fG-g8g"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="64s-iD-Gfl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3dg-5G-2i2" kind="relationship" relationship="rootViewController" id="BCg-YA-lni"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Et9-on-RYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="-27"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="mL3-KF-1an">
+            <objects>
+                <viewController id="3dg-5G-2i2" customClass="HomeViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iMa-IZ-uPc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9W7-wE-NJd">
+                                <rect key="frame" x="105" y="494" width="182" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Contribution 불러오기"/>
+                                <connections>
+                                    <action selector="touchUpContribution:" destination="3dg-5G-2i2" eventType="touchUpInside" id="jOH-UI-itJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SlM-xa-NmH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oFE-JC-qV5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZb-Qr-asB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="-27"/>
+        </scene>
+        <!--그룹-->
+        <scene sceneID="gOY-7G-Uog">
+            <objects>
+                <navigationController id="ORQ-jo-m4z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="그룹" id="XN1-bx-aQ1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Prs-Xz-sei">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O8O-2X-Y0Z" kind="relationship" relationship="rootViewController" id="Xtt-1I-sgr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWG-Ng-A0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="634"/>
+        </scene>
+        <!--Group Table View Controller-->
+        <scene sceneID="OgH-UL-gIm">
+            <objects>
+                <tableViewController id="O8O-2X-Y0Z" customClass="GroupTableViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EXA-8E-8lc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rqV-Kr-dKx">
+                                <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rqV-Kr-dKx" id="kd3-yP-5za">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="O8O-2X-Y0Z" id="WGV-s2-wXf"/>
+                            <outlet property="delegate" destination="O8O-2X-Y0Z" id="8K3-6D-JuG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="U3x-b4-2dT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHM-RW-TbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="634"/>
+        </scene>
+        <!--My Info View Controller-->
+        <scene sceneID="flN-kl-y1J">
+            <objects>
+                <viewController storyboardIdentifier="MyInfoVC" id="4hG-LR-Dvm" customClass="MyInfoViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4xY-eV-0pf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YL-nu-Mmb">
+                                <rect key="frame" x="154" y="482" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                <connections>
+                                    <action selector="touchUpLogout:" destination="4hG-LR-Dvm" eventType="touchUpInside" id="Hxi-bD-vZU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPf-22-bzE">
+                                <rect key="frame" x="123" y="544" width="146" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="유저정보 불러오기"/>
+                                <connections>
+                                    <action selector="getUserData:" destination="4hG-LR-Dvm" eventType="touchUpInside" id="oXH-ko-KSC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyk-hx-tl4">
+                                <rect key="frame" x="66" y="336" width="261" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="djh-lg-Y8V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Si9-HO-Mo0"/>
+                    <connections>
+                        <outlet property="userIDLabel" destination="Dyk-hx-tl4" id="3i6-bx-fmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VC-dS-6pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2981" y="1020"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="uai-4Z-ONq">
+            <objects>
+                <viewController storyboardIdentifier="NotificationVC" id="28m-R4-zOz" customClass="NotificationViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hdv-TJ-P0R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qJd-O1-uDr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zIJ-Wa-OyI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exr-Sw-0TH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018" y="340"/>
+        </scene>
+        <!--메시지-->
+        <scene sceneID="WNH-zp-VnS">
+            <objects>
+                <navigationController id="dcI-FQ-uI8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="메시지" id="nYr-w4-thb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mpp-Cs-SXI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7gj-xl-SVW" kind="relationship" relationship="rootViewController" id="kV1-5q-b1P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQd-7V-KVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="1291"/>
+        </scene>
+        <!--Message Table View Controller-->
+        <scene sceneID="01d-sB-xnl">
+            <objects>
+                <tableViewController id="7gj-xl-SVW" customClass="MessageTableViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EJy-nj-P0D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R6h-SU-eTE">
+                                <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R6h-SU-eTE" id="srM-t7-Ff1">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7gj-xl-SVW" id="Jxi-mv-Rwa"/>
+                            <outlet property="delegate" destination="7gj-xl-SVW" id="8e1-a1-I6e"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="O6T-g3-Gu7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oE-DW-GVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="1291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

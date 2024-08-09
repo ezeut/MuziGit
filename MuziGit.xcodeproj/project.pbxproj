@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50451BC92C63835B002AA6CA /* GithubConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50451BC82C63835B002AA6CA /* GithubConstants.swift */; };
 		507940B22C5D1C8C00EEB9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */; };
 		507940B42C5D1C8C00EEB9BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */; };
 		507940B62C5D1C8C00EEB9BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940B52C5D1C8C00EEB9BE /* ViewController.swift */; };
@@ -14,9 +15,25 @@
 		507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */; };
 		507940BE2C5D1C8D00EEB9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */; };
 		507940C12C5D1C8D00EEB9BE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 507940C02C5D1C8D00EEB9BE /* Base */; };
+		507940C92C5D1FE400EEB9BE /* GithubLoginInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */; };
+		507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */; };
+		507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */; };
+		507940D22C5D2E4A00EEB9BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507940D12C5D2E4A00EEB9BE /* Home.storyboard */; };
+		507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */; };
+		507940D72C5DFB1900EEB9BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */; };
+		507940D92C5DFB2500EEB9BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940D82C5DFB2500EEB9BE /* HomeViewController.swift */; };
+		507940E12C629E5C00EEB9BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507940E02C629E5C00EEB9BE /* User.swift */; };
+		50A06ADF2C63A9B700F58C5A /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A06ADE2C63A9B700F58C5A /* MyInfoViewController.swift */; };
+		50A06AE12C63A9CB00F58C5A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A06AE02C63A9CB00F58C5A /* NotificationViewController.swift */; };
+		50A06AE32C63BE1A00F58C5A /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A06AE22C63BE1A00F58C5A /* GroupTableViewController.swift */; };
+		50A06AE52C63BE3D00F58C5A /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A06AE42C63BE3D00F58C5A /* MessageTableViewController.swift */; };
+		50B466882C633B7300BD58EC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 50B466872C633B7300BD58EC /* SwiftSoup */; };
+		50B4668B2C633C6E00BD58EC /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 50B4668A2C633C6E00BD58EC /* SwiftDate */; };
+		50D60B752C653D640064C8A8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D60B742C653D640064C8A8 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50451BC82C63835B002AA6CA /* GithubConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubConstants.swift; sourceTree = "<group>"; };
 		507940AE2C5D1C8C00EEB9BE /* MuziGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuziGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +43,19 @@
 		507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507940C02C5D1C8D00EEB9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507940C22C5D1C8D00EEB9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GithubLoginInfo.plist; sourceTree = "<group>"; };
+		507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuziGit++Bundle.swift"; sourceTree = "<group>"; };
+		507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubLoginManager.swift; sourceTree = "<group>"; };
+		507940D12C5D2E4A00EEB9BE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		507940D82C5DFB2500EEB9BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		507940E02C629E5C00EEB9BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		50A06ADE2C63A9B700F58C5A /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		50A06AE02C63A9CB00F58C5A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		50A06AE22C63BE1A00F58C5A /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		50A06AE42C63BE3D00F58C5A /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		50D60B742C653D640064C8A8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B4668B2C633C6E00BD58EC /* SwiftDate in Frameworks */,
+				50B466882C633B7300BD58EC /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +90,70 @@
 		507940B02C5D1C8C00EEB9BE /* MuziGit */ = {
 			isa = PBXGroup;
 			children = (
+				507940DC2C629E2B00EEB9BE /* Storyboard */,
+				507940DB2C629E2300EEB9BE /* Constants */,
+				507940DA2C629E0300EEB9BE /* Controller */,
+				507940C82C5D1FE400EEB9BE /* GithubLoginInfo.plist */,
+				507940C22C5D1C8D00EEB9BE /* Info.plist */,
 				507940B12C5D1C8C00EEB9BE /* AppDelegate.swift */,
 				507940B32C5D1C8C00EEB9BE /* SceneDelegate.swift */,
-				507940B52C5D1C8C00EEB9BE /* ViewController.swift */,
-				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
+				507940CC2C5D20AF00EEB9BE /* GithubLoginManager.swift */,
+				507940CA2C5D203000EEB9BE /* MuziGit++Bundle.swift */,
 				507940BD2C5D1C8D00EEB9BE /* Assets.xcassets */,
-				507940BF2C5D1C8D00EEB9BE /* LaunchScreen.storyboard */,
-				507940C22C5D1C8D00EEB9BE /* Info.plist */,
 				507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */,
+				50D60B742C653D640064C8A8 /* Extension.swift */,
 			);
 			path = MuziGit;
+			sourceTree = "<group>";
+		};
+		507940DA2C629E0300EEB9BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50D60B712C6517F60064C8A8 /* Main */,
+				50D60B702C6517EC0064C8A8 /* Home */,
+				507940B52C5D1C8C00EEB9BE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		507940DB2C629E2300EEB9BE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				507940E02C629E5C00EEB9BE /* User.swift */,
+				50451BC82C63835B002AA6CA /* GithubConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		507940DC2C629E2B00EEB9BE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				507940BF2C5D1C8D00EEB9BE /* LaunchScreen.storyboard */,
+				507940B72C5D1C8C00EEB9BE /* Main.storyboard */,
+				507940D12C5D2E4A00EEB9BE /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		50D60B702C6517EC0064C8A8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				507940D82C5DFB2500EEB9BE /* HomeViewController.swift */,
+				50A06ADE2C63A9B700F58C5A /* MyInfoViewController.swift */,
+				50A06AE02C63A9CB00F58C5A /* NotificationViewController.swift */,
+				50A06AE22C63BE1A00F58C5A /* GroupTableViewController.swift */,
+				50A06AE42C63BE3D00F58C5A /* MessageTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		50D60B712C6517F60064C8A8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				507940D62C5DFB1900EEB9BE /* OnboardingViewController.swift */,
+				507940D32C5D357600EEB9BE /* OnboardingPageViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +172,10 @@
 			dependencies = (
 			);
 			name = MuziGit;
+			packageProductDependencies = (
+				50B466872C633B7300BD58EC /* SwiftSoup */,
+				50B4668A2C633C6E00BD58EC /* SwiftDate */,
+			);
 			productName = MuziGit;
 			productReference = 507940AE2C5D1C8C00EEB9BE /* MuziGit.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +204,11 @@
 				Base,
 			);
 			mainGroup = 507940A52C5D1C8C00EEB9BE;
+			packageReferences = (
+				507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				50B466862C633B7300BD58EC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				50B466892C633C6E00BD58EC /* XCRemoteSwiftPackageReference "SwiftDate" */,
+			);
 			productRefGroup = 507940AF2C5D1C8C00EEB9BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,8 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				507940BE2C5D1C8D00EEB9BE /* Assets.xcassets in Resources */,
+				507940D22C5D2E4A00EEB9BE /* Home.storyboard in Resources */,
 				507940C12C5D1C8D00EEB9BE /* Base in Resources */,
 				507940B92C5D1C8C00EEB9BE /* Base in Resources */,
+				507940C92C5D1FE400EEB9BE /* GithubLoginInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +238,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50451BC92C63835B002AA6CA /* GithubConstants.swift in Sources */,
 				507940B62C5D1C8C00EEB9BE /* ViewController.swift in Sources */,
 				507940BC2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld in Sources */,
+				50A06ADF2C63A9B700F58C5A /* MyInfoViewController.swift in Sources */,
+				507940D42C5D357600EEB9BE /* OnboardingPageViewController.swift in Sources */,
+				507940D72C5DFB1900EEB9BE /* OnboardingViewController.swift in Sources */,
 				507940B22C5D1C8C00EEB9BE /* AppDelegate.swift in Sources */,
+				507940D92C5DFB2500EEB9BE /* HomeViewController.swift in Sources */,
+				50D60B752C653D640064C8A8 /* Extension.swift in Sources */,
+				507940CB2C5D203000EEB9BE /* MuziGit++Bundle.swift in Sources */,
+				507940CD2C5D20AF00EEB9BE /* GithubLoginManager.swift in Sources */,
+				50A06AE12C63A9CB00F58C5A /* NotificationViewController.swift in Sources */,
+				50A06AE32C63BE1A00F58C5A /* GroupTableViewController.swift in Sources */,
 				507940B42C5D1C8C00EEB9BE /* SceneDelegate.swift in Sources */,
+				50A06AE52C63BE3D00F58C5A /* MessageTableViewController.swift in Sources */,
+				507940E12C629E5C00EEB9BE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +411,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +420,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bbibbo.MuziGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,8 +443,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +452,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bbibbo.MuziGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,6 +484,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		507940CE2C5D20D800EEB9BE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		50B466862C633B7300BD58EC /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.3;
+			};
+		};
+		50B466892C633C6E00BD58EC /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50B466872C633B7300BD58EC /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50B466862C633B7300BD58EC /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		50B4668A2C633C6E00BD58EC /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50B466892C633C6E00BD58EC /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		507940BA2C5D1C8C00EEB9BE /* MuziGit.xcdatamodeld */ = {

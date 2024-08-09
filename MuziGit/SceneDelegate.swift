@@ -17,7 +17,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        setRootViewController(scene)
     }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+           if let url = URLContexts.first?.url {
+               print(url)
+               if url.absoluteString.starts(with: "muzigit-ios://") {
+                   if let code = url.absoluteString.split(separator: "=").last.map({ String($0) }) {
+                       GithubLoginManager.shared.requestAccessToken(with: code)
+                       setRootViewController(scene, name: "Home", identifier: "Home")
+                   }
+               }
+           }
+       }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -53,3 +66,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension SceneDelegate {
+    private func setRootViewController(_ scene: UIScene) {
+        if UserDefaults.standard.string(forKey: "accessToken") != nil {
+            setRootViewController(scene, name: "Home", identifier: "Home")
+            print(UserDefaults.standard.string(forKey: "accessToken") as Any)
+            print(UserDefaults.standard.string(forKey: "refreshToken") as Any)
+        } else {
+            setRootViewController(scene, name: "Main", identifier: "Main")
+            print(UserDefaults.standard.string(forKey: "accessToken") as Any)
+            print(UserDefaults.standard.string(forKey: "refreshToken") as Any)
+        }
+    }
+    
+    private func setRootViewController(_ scene: UIScene, name: String, identifier: String) {
+        if let windowScene = scene as? UIWindowScene {
+                    let window = UIWindow(windowScene: windowScene)
+                    let storyboard = UIStoryboard(name: name, bundle: nil)
+                    let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
+                    window.rootViewController = viewController
+                    self.window = window
+                    window.makeKeyAndVisible()
+                }
+    }
+}

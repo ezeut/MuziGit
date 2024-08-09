@@ -9,14 +9,15 @@ import UIKit
 
 class MessageTableViewController: UITableViewController {
 
+    @IBAction func touchUpNotification(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func touchUpMyInfo(_ sender: UIBarButtonItem) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        addNavigationBar(searchBarText: "메시지 찾기", firstButtonImageName: "bell", secondButtonImageName: "person")
     }
 
     // MARK: - Table view data source

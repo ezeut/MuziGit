@@ -27,47 +27,6 @@
             </objects>
             <point key="canvasLocation" x="691" y="634"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="sgI-nb-YuE">
-            <objects>
-                <navigationController id="jtk-U0-gj1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wD6-Rx-OEZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rYf-Gu-26m">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="KpB-fO-2F2" kind="relationship" relationship="rootViewController" id="33b-Gd-P3G"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kJj-XC-wf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1418" y="-27"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Pfw-Zm-rxV">
-            <objects>
-                <viewController id="KpB-fO-2F2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="w1X-px-DMn">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="10D-kV-qOo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="15G-Wf-Pos">
-                        <barButtonItem key="leftBarButtonItem" title="MUZIGIT 이미지" width="200" id="YFP-Xr-TrM">
-                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="person" catalog="system" id="cEI-Yr-wAM"/>
-                            <barButtonItem title="Item" image="bell" catalog="system" id="etQ-JY-DJS"/>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bVq-mb-FAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2083" y="-27"/>
-        </scene>
         <!--홈-->
         <scene sceneID="3Ug-vw-Dte">
             <objects>
@@ -106,23 +65,7 @@
                         <viewLayoutGuide key="safeArea" id="SlM-xa-NmH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oFE-JC-qV5">
-                        <barButtonItem key="leftBarButtonItem" title="MUZIGIT 이미지" width="200" id="iGM-u0-D0q">
-                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="person" catalog="system" id="UHf-Q9-Gsf">
-                                <connections>
-                                    <segue destination="4hG-LR-Dvm" kind="show" id="xhM-zv-Ume"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem image="bell" catalog="system" id="QIw-N3-U4a">
-                                <connections>
-                                    <segue destination="28m-R4-zOz" kind="show" id="iMb-k5-6sv"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="oFE-JC-qV5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZb-Qr-asB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1418" y="634"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Group Table View Controller-->
         <scene sceneID="OgH-UL-gIm">
             <objects>
-                <tableViewController id="O8O-2X-Y0Z" sceneMemberID="viewController">
+                <tableViewController id="O8O-2X-Y0Z" customClass="GroupTableViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EXA-8E-8lc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,23 +111,7 @@
                             <outlet property="delegate" destination="O8O-2X-Y0Z" id="8K3-6D-JuG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="U3x-b4-2dT">
-                        <barButtonItem key="leftBarButtonItem" title="MUZIGIT 이미지" width="200" id="zjJ-f8-xJb">
-                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="person" catalog="system" id="oVp-zW-RXa">
-                                <connections>
-                                    <segue destination="4hG-LR-Dvm" kind="show" id="xOI-5w-6jJ"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem image="bell" catalog="system" id="eGb-cC-Sud">
-                                <connections>
-                                    <segue destination="28m-R4-zOz" kind="show" id="tvr-S8-2Zj"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="U3x-b4-2dT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHM-RW-TbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,18 +120,11 @@
         <!--My Info View Controller-->
         <scene sceneID="flN-kl-y1J">
             <objects>
-                <viewController id="4hG-LR-Dvm" customClass="MyInfoViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyInfoVC" id="4hG-LR-Dvm" customClass="MyInfoViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4xY-eV-0pf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKB-qR-75p">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="내 정보" id="onv-5D-3hZ"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YL-nu-Mmb">
                                 <rect key="frame" x="154" y="482" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -246,19 +166,10 @@
         <!--Notification View Controller-->
         <scene sceneID="uai-4Z-ONq">
             <objects>
-                <viewController id="28m-R4-zOz" customClass="NotificationViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotificationVC" id="28m-R4-zOz" customClass="NotificationViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hdv-TJ-P0R">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSF-Oc-s8C">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="알림" id="XNC-LS-fGz"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qJd-O1-uDr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -285,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="1418" y="1291"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Message Table View Controller-->
         <scene sceneID="01d-sB-xnl">
             <objects>
-                <tableViewController id="7gj-xl-SVW" sceneMemberID="viewController">
+                <tableViewController id="7gj-xl-SVW" customClass="MessageTableViewController" customModule="MuziGit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EJy-nj-P0D">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,36 +219,14 @@
                             <outlet property="delegate" destination="7gj-xl-SVW" id="8e1-a1-I6e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="O6T-g3-Gu7">
-                        <barButtonItem key="leftBarButtonItem" title="MUZIGIT 이미지" width="200" id="0Kr-9i-CMa">
-                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="person" catalog="system" id="HOO-36-ZBV">
-                                <connections>
-                                    <segue destination="4hG-LR-Dvm" kind="show" id="DE9-kk-cyi"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem image="bell" catalog="system" id="Nxa-3F-JY2">
-                                <connections>
-                                    <segue destination="28m-R4-zOz" kind="show" id="hok-Jt-J32"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="O6T-g3-Gu7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oE-DW-GVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2082" y="1291"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="iMb-k5-6sv"/>
-        <segue reference="xhM-zv-Ume"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="bell" catalog="system" width="125" height="128"/>
-        <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
